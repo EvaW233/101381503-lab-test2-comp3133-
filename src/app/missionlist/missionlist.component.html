@@ -1,0 +1,9 @@
+<div *ngFor="let mission of missions" (click)="selectMission(mission)" class="mission-item">
+    <img [src]="mission.links.mission_patch_small" alt="Mission Patch">
+    <div>
+      <p><strong>{{ mission.mission_name }}</strong></p>
+      <p>Launch Year: {{ mission.launch_year }}</p>
+      <p>Successful Launch: {{ mission.launch_success ? 'Yes' : 'No' }}</p>
+    </div>
+  </div>
+  
